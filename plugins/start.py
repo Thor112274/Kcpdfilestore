@@ -81,8 +81,8 @@ async def start_command(client: Client, message: Message):
         reply_markup = InlineKeyboardMarkup([
             [InlineKeyboardButton("ʜᴇʟᴘ", callback_data='help'),
              InlineKeyboardButton("ᴀʙᴏᴜᴛ", callback_data='about')],
-            [InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Anime_Sub_Society'),
-             InlineKeyboardButton('ᴏɴɢᴏɪɴɢ ᴄʜᴀɴɴᴇʟ', url='https://t.me/Ongoing_Society')],
+            [InlineKeyboardButton('ᴍᴀɪɴ ᴄʜᴀɴɴᴇʟ', url='https://t.me/movie_loverzz'),
+             InlineKeyboardButton('ʙᴀᴄᴋ-ᴜᴘ ᴄʜᴀɴɴᴇʟ', url='https://t.me/movie_loverz_ofcl')],
             [InlineKeyboardButton("ᴄʟᴏꜱᴇ", callback_data='close')]
         ])
         await message.reply_photo(
@@ -125,7 +125,7 @@ async def not_joined(client: Client, message: Message):
         buttons.append(
             [
                 InlineKeyboardButton(
-                    text = '• ⚡ ɴᴏᴡ ᴄʟɪᴄᴋ ʜᴇʀᴇ ⚡ •',
+                    text = '• ⚡ Try Again ⚡ •',
                     url = f"https://t.me/{client.username}?start={message.command[1]}"
                 )
             ]
